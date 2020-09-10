@@ -1,0 +1,201 @@
+/************* GENERAL CSS ************/
+
+body {
+	margin: 0px;
+	padding: 0px;
+	background: #FFFFFF url(back.png) repeat-y center top;
+	text-align: justify;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	color: #000000;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	font-family: Georgia, "Times New Roman", Times, serif;
+	color: #646D7E;
+}
+
+a {
+	font-weight: bold;	
+	text-decoration: none;
+	color: #98AFC7;
+}
+
+a:hover {
+	text-decoration: underline;
+	color: #666362;
+}
+
+/************* HEADER STUFF ************/
+
+#header {
+    width: 790px;
+    height: 60px;
+    margin: 0px auto;
+    padding: 5px 0px;
+    background: #FFFBFD url(header.jpg);
+}
+
+#header h1 {
+    margin: 0px;
+    padding: 0px 0px 0px 5px;
+    text-align: left;
+    color: #5E5A80;
+    font-size: 2em;
+    text-transform: uppercase;
+}
+
+#header h2 {
+    margin: 0px;
+    padding: 0px 0px 0px 2px;
+    text-align: left;
+    font-size: 1.3em;
+    text-transform: uppercase;
+}
+
+#header h3 {
+    margin: 0px;
+    padding: 0px 0px 0px 2px;
+    text-align: right;
+    font-size: 1.3em;
+    text-transform: uppercase;
+}
+
+/************* MENU ************/
+
+#menu {
+	width: 790px;
+	margin: 0px auto;
+	padding: 5px 0px 5px 0px;
+	background-color: #000000;
+}
+
+#menu ul {
+	margin: 0px;
+	padding: 0px;
+	list-style: none;
+	text-align: center;
+}
+
+#menu li {
+	display: inline;
+}
+
+#menu a {
+	padding: 5px 5px;
+	text-transform: uppercase;
+	text-decoration: none;
+	font-size: 12px;
+	font-weight: bold;
+	color: #FFFFFF;
+}
+
+#menu a:hover {
+	background-color: #333330;
+}
+
+
+/************* CONTENT ************/
+
+#content {
+	width: 530px;
+	margin: 0px auto;
+	padding: 5px 5px 5px 5px;
+}
+
+#content h2, #content h3, #content h4, #content h5, #content h6 {
+	font-weight: normal;
+}
+
+#content p, #content ul, #content ol {
+	line-height: 180%;
+}
+
+#left {
+	float: left;
+	width: 470px;
+	padding: 0px 0px 0px 20px;
+}
+
+#right {
+	float: right;
+	width: 260px;
+	padding: 10px 0px 0px 0px;
+    text-align: center;
+	
+}
+
+/************* FOOTER ************/
+
+#footer {
+	clear: both;
+	width: 800px;
+	margin: 0px auto;
+	border-top: 1px solid #666666;
+	background: url(back-footer.png) repeat-y center top;
+	font-size: 9px;
+	text-align: center;
+	padding: 2px;
+	color: #333333;
+}
+
+
+#faketable1px {
+	height: 1px;
+	margin: 0px;
+    padding: 0px 0px 0px 0px;
+}
+
+#faketable2px {
+	height: 2px;
+	margin: 0px;
+    padding: 0px 0px 0px 0px;
+}
+
+#faketable3px {
+	height: 3px;	
+	margin: 0px;
+    padding: 0px 0px 0px 0px;
+}
+
+#faketable4px {
+	height: 4px;
+	margin: 0px;
+    padding: 0px 0px 0px 0px;
+}
+
+#faketable5px {
+	height: 5px;
+	margin: 0px;
+    padding: 0px 0px 0px 0px;
+}
+
+#faketable6px {
+	height: 6px;
+	margin: 0px;
+    padding: 0px 0px 0px 0px;
+}
+
+#faketable7px {
+	height: 7px;
+	margin: 0px;
+    padding: 0px 0px 0px 0px;
+}
+
+#faketable8px {
+	height: 8px;
+	margin: 0px;
+    padding: 0px 0px 0px 0px;
+}
+
+#faketable9px {
+	height: 9px;
+	margin: 0px;
+    padding: 0px 0px 0px 0px;
+}
+
+#faketable10px {
+	height: 10px;
+	margin: 0px;
+    padding: 0px 0px 0px 0px;
+}

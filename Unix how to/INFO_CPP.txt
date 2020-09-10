@@ -1,0 +1,92 @@
+----------------------------------------------------------------
+Compilation for C language (extension .c):
+----------------------------------------------------------------
+
+1) Compile into executable file from multiple source files:
+
+   gcc <file1.c> <file2.c> ... -o <outputfile>
+
+
+2) Compile a file in a separate obj-file
+
+
+gcc -c <file1.c> <file2.c> ... the output file1.o, file2.o ...)
+
+
+3) Link obj-files into one executable
+
+   gcc <file1.o> <file2.o> ... -o  <outputfile>
+
+----------------------------------------------------------------
+Compilation for C++ language (extension .C, .c++, .cpp):
+----------------------------------------------------------------
+
+1) Compile into executable file from multiple source files:
+
+   g++ <file1.cpp> <file2.cpp> ... -o <outputfile>
+
+
+2) Compile a file in a separate obj-file
+
+
+g++ -c <file1.c> <file2.c> ...(the output file1.o, file2.o ...)
+
+
+3) Link obj-files into one executable
+
+   g++ <file1.o> <file2.o> ... -o  <outputfile>
+
+
+Notes: An obj file can be used as a library!
+
+----------------------------------------------------------------
+Creating a static library from source files:
+----------------------------------------------------------------
+
+First "compile" files in obj-files. Then "link" it. 
+
+   g++ -c <file1.c> <file2.c> ...
+
+   ar rcs lib<name>.a <file1.o> <file2.0> ...
+
+Notes: Library must start with "lib" and end in ".a".
+
+
+----------------------------------------------------------------
+Linking static libraries with obj-files into executable:
+----------------------------------------------------------------
+
+   g++ -static <file1.o> , <file2.o> ... -L<dirname> -l<libname1> -l<libname2> ... -o <output>
+
+Notes: -L  specifies directory name in which to look for lib<libname>.a library.
+       -L. tells to look for it in the current directory.
+
+----------------------------------------------------------------
+Linking static libraries of Fortran and C++ with g++/gfortran/gcc: 
+----------------------------------------------------------------
+
+compiling with g++:  One must use fortran library explicitly
+
+g++ <file1_cpp.o> , <file2_fortran.o> ... -L/lib/gcc/i686-pc-cygwin/4.5.3/  -lgfortran -o <output>
+
+compiling with gfortran: One must use g++ library explicitly
+
+gfortran <file1_cpp.o> , <file2_fortran.o> ... -L/lib/gcc/i686-pc-cygwin/4.5.3/  -lstdc++ -o <output>
+
+compiling with gcc: One must use gcc library explicitly
+
+gcc <file1_cpp.o> , <file2_fortran.o> ... -L/lib/gcc/i686-pc-cygwin/4.5.3/ -lgcc -o <output>
+
+----------------------------------------------------------------
+Checking if a library is installed:
+----------------------------------------------------------------
+
+ld -l<name of library>
+
+----------------------------------------------------------------
+Adding folder name for Header Files:
+----------------------------------------------------------------
+
+if "headerfile.h" is used then information about location can be added during compilation as
+
+g++ -c <file>.cpp -I<DIRHEADERLOCATION>

@@ -1,0 +1,9 @@
+Checking if the library is installed:
+
+python -c "import <module name>"
+
+----------------------------------------------------------------
+
+Checking the version of installed modules
+
+pip freeze

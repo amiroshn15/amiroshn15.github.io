@@ -1,0 +1,40 @@
+1) To install MPI under Cygwin: Download source
+
+   http://www.mcs.anl.gov/research/projects/mpich2/downloads/index.php?s=downloads
+
+   and then compile it.
+
+2) Installing PETSc for Cygwin is the same as under UNIX. NOTE: PETSc can install MPI for you if it is not installed.
+
+   http://www.mcs.anl.gov/petsc/petsc-2/documentation/installation.html
+
+
+3) "hostname" give a name of the machine.
+
+4) MPI examples are in /tmp/Alexey/mpich2-1.3.2p1
+
+5) machinfile looks like:
+
+Hyperbolic:n1   n_i - number of processes.
+Hyperbolic:n2
+Hyperbolic:n3
+Hyperbolic:n4
+Hyperbolic:n5
+Hyperbolic:n6
+Hyperbolic:n7
+Hyperbolic:n8
+
+6) To run parallel programm:  mpiexec -f machinefile -n 5 <file name>
+
+7) mpicc or mpicxx are used instead of gcc and g++ compilers.
+
+
+make -j2 ***
+
+./configure --with-blas-lapack-dir=/usr/local/lib --with-cc=mpicc --with-cxx=mpicxx --with-scalar-type=complex --with-clanguage=cxx
+
+./configure --with-blas-lapack-dir=/usr/local/lib --with-mpi-dir=~/mpich2-install/ --with-clanguage=cxx
+
+make PETSC_DIR=/home/Alexey/soft/petsc-3.1-p8 PETSC_ARCH=cygwin-cxx-debug all
+
+

@@ -1,0 +1,26 @@
+1)Install git together with "git bash"
+
+2) Create a (regular) folder containing all projects (say repos or projects)
+
+3) Add a public key in bitbucket (account/viewprofile/ssh setting) from .ssh folder
+typically a key will be in id_rsa.pub. One can create a new key (use ssh programto generate a key).
+
+See: https://confluence.atlassian.com/bitbucketserver/creating-ssh-keys-776639788.html
+
+4) go to bitbucket and find "clone" button which will provide with the command line to run
+
+5) if publik key is not found then rename the keys in .ssh folder as follows:
+git_rsa to id_rsa and git_ersa.pub into id_rsa.pub
+
+6) git has to be configured:
+
+git config --global user.email "amiroshn@attlasian.com"
+
+useful commands:
+
+git checkout evgeny/iter #to change branches:
+
+git add filename # add file
+git commit -m "message"
+git push 
+git pull

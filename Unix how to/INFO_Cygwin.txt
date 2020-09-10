@@ -1,0 +1,16 @@
+
+ Cygwin - allows to use Xwindows like in Unix in Windows. See pdf file about installation.
+
+ FAQ on Cygwin: http://cygwin.com/faq-nochunks.html#faq.using.not-found
+
+
+0) start Xterminal window: use Cygwin terminal and type command: "startxwin"
+
+----------------------------------------------------------------------------------------------
+
+
+3) Problems with Forking the process and DLL: use "rebaseall" in dash or ash process or use "peflagsall" by doing the following
+   go to Run and type "cmd". After that "cd cygwin\bin" and type "ash rebaseall -v" or "ash "peflagsall -v". 
+   (it is best to reboot before doing it).
+
+  

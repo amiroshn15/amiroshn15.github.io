@@ -1,0 +1,63 @@
+----------------------------------------------------------------
+
+1) SEL ALIASES in bash. Go/Create to .bashrc and set aliases:
+
+(see http://www.hypexr.org/bash_tutorial.php)
+
+Examples: 
+
+alias ls='ls -aF --color=always' 
+alias ll='ls -l' alias search=grep 
+alias mcd='mount /mnt/cdrom' alias ucd='umount /mnt/cdrom' 
+alias mc='mc -c' alias ..='cd ..' alias ...='cd ../..'  
+
+2a) SET environment variables: Go to ".bashrc" file in the home directory and write export PATH="<new path>:$PATH"
+
+Example: PATH=".:$PATH" - adds new path.
+
+
+2b) "EXECUTE" ./bashrc : source .bashrc
+
+
+3) RUN programm in a SEPARATE window use "&": for example emacs <filename>&
+
+
+4) Editor: gedit <filename>&  (use X-forwarding)
+
+
+5) SEARCH FOR STRING: grep <what> <in which file(s)>: 
+
+	Example: grep BaseClass *.cpp
+ 
+   PIPING USE: more <filename> | grep <searchstring>
+
+
+6) ALIASES: Either use .profile or .aliases or create your own .strartu.tty and make it executable adding aliases there.
+
+
+7) SSH on another machine: From xterm window type ssh -l <loginname> <nameof the machine>
+
+
+8) LEARN the content of a variable: echo $<variable>
+
+9) Tar - ARCHIVE files: 
+
+tar -cf <archive name> <file 1> ... <folder 1>...  
+
+Tar - EXTRACT files: 
+
+tar -xf <archive name>
+
+10) LIST the content of tar-archive: tar -tf <archive name>
+
+11) REMOVE Folder: rm -r <folder name> 
+
+12) goto-line in Emacs: M-g-g 
+
+13) prints out the tail of the file: tail <file.txt>
+
+13) run <command> as a root: sudo <command> 
+
+14) To make a link/alias for the programm: For example "ln -s flex /usr/bin/lex"
+
+----------------------------------------------------------------

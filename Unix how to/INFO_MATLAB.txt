@@ -1,0 +1,16 @@
+MATLAB HINTS:
+
+
+Properties of an object in MATLAB:
+
+Write:
+
+h={object};
+set(h);
+
+This gives properties of the object which then can be looked at via help.
+
+For Example:
+
+h1=figure; h2=plot; h3=axes; set(h1), set(h2), set(h3) .
+
