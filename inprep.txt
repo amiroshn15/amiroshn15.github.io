@@ -1,0 +1,14 @@
+   <ul>
+
+      <!-- <div id="faketable4px"><table><tr><td></td></tr></table></div> -->
+
+      <li> A. Miroshnikov, M. Steinrucken, Computing transition functions for Piecewise Deterministic Markov Processes and Applications to Computational Genomics. </li> 
+
+      <li> A. Miroshnikov, M. Steinrucken, Accurate and Efficient Inference of Population Size History from Genomic Sequence Data of Multiple Individuals. </li>
+
+<!-- <li> P.-E. Jabin, A. Miroshnikov, and R. Young. Stochastic Models in Cellulose Biodegradation; Cooperative Interactions in Structured Populations.</li>
+ -->
+ <li> A. Miroshnikov, R. Young, Weak* Solutions III: a Convergent Front Tracking Scheme.
+
+<li>  A. Miroshnikov, E. Savelev, M. Lindstrom,  Stability and Convergence of Fully-discrete Entropic Variational Schemes for One-dimensional Equations of Elastodynamics. </li>
+
